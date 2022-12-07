@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>homeWork 7</title>
+        <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap-grid.min.css"/>
+        <script type="text/javascript" src="bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js" defer></script>
+        <link rel="stylesheet" href="style.css"/>
+        <script type="text/javascript" src="script.js"defer></script>
+    </head>
+    <body>
+        <div class="header" >Fruit Shop</div>
+
+        <div class="container-fluid" id="container">
+            <div class="row justify-content-around mb-3">
+            
+                <div class="col-2 border">
+                    <div class="card w-33">
+                        <img src="https://ui.assets-asda.com/dm/asdagroceries/0000000005227_T1?defaultImage=asdagroceries/noImage&resMode=sharp2&id=D0CRd3&fmt=jpg&dpr=off&fit=constrain,1&wid=256&hei=256"/>
+                        <div class="card-body">
+                            <h2 class="card-title">Banana</h2>
+                            <p class="card-text">
+                                5 NIS per item <br><br>
+                                <button id="plus" onclick="addProduct(productsInCart[0][1], banana)"> Add to cart </button> 
+                                <button id="minus" onclick="reduceProduct(productsInCart[0][1], bananaMinus)"> Reduce from cart </button> 
+                            </p>              
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-2 border">
+                    <div class="card w-33">
+                        <img src="https://ipcdn.freshop.com/resize?url=https://images.freshop.com/7183086/7d6abc5062292e0a1ef05cb4a381c09e_large.png&width=256&type=webp&quality=80"/>
+                        <div class="card-body">
+                            <h2 class="card-title">Pineapple</h2>
+                            <p class="card-text">
+                                15 NIS per item <br><br>
+                                    <button onclick="addProduct(productsInCart[1][1], pineapple)"> Add to cart </button> 
+                                    <button onclick="reduceProduct(productsInCart[1][1], pineappleMinus)"> Reduce from cart </button> 
+                            </p>              
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-2 border">
+                    <div class="card w-33">
+                        <img src="https://www.applepietrail.ca/wp-content/uploads/2020/08/ambrosia.jpg"/>
+                        <div class="card-body">
+                            <h2 class="card-title">Apple</h2>
+                            <p class="card-text">
+                                6 NIS per item <br><br>
+                                <button onclick="addProduct(productsInCart[2][1], apple)"> Add to cart </button> 
+                                <button onclick="reduceProduct(productsInCart[2][1], appleMinus)"> Reduce from cart </button> 
+                            </p>              
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around mb-1">
+                    <div class="card">                       
+                      <div class="card-body">
+                            <h2 class="card-title">My Cart</h2>
+                            <p class="card-text" id="myCart">                               
+                               
+                            </p>              
+                        </div>
+                    </div>
+                </div>
+
+            </div>   
+        </div>
+
+        <div class="footer">Fruit Shop Ltd</div>
+    </body>
+</html>
